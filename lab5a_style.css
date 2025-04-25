@@ -1,5 +1,7 @@
 body {
-    background: url("https://www.worldatlas.com/r/w1300/upload/bb/c3/32/shutterstock-1041249343.jpg") opacity(0.5);
+    background: 
+      linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+      url("https://www.worldatlas.com/r/w1300/upload/bb/c3/32/shutterstock-1041249343.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
