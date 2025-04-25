@@ -1,4 +1,15 @@
+/* * {
+  border: 1px solid white;
+} */
 
+.header {
+    background-color: #ff6f61;
+    color: #ffffff;
+    padding: 10px;
+    text-align: center;
+  border: #ffffff;
+
+}
 
 body {
     background: 
