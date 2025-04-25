@@ -1,11 +1,4 @@
-.header {
-    background-color: #ff6f61;
-    color: #ffffff;
-    padding: 10px;
-    text-align: center;
-  border: #ffffff;
 
-}
 
 body {
     background: 
@@ -22,6 +15,7 @@ body {
     color: white;
     font-family: "press start 2p", sans-serif;
     margin-top: 20px;
+    font-size: 40px;
 }
 
 img {
