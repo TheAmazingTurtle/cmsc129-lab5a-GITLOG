@@ -6,7 +6,23 @@
 <body>
 
     <h1>Mars Rover Photo Viewer</h1>
-    <p>Fetching photos from Curiosity rover on Earth date: <strong>2020-07-01</strong></p>
+
+    <form class="apiRequest">
+        <label>Rover:</label>
+        <select id="roverInput" name="rover">
+            <option value="curiosity">Curiosity</option>
+            <option value="opportunity">Opportunity</option>
+            <option value="spirit">Spirit</option>
+        </select>
+
+        <label>Date:</label>
+        <input class="expand" type="date" id="dateInput" name="date">
+
+        <button type="submit" id="submitApiRequest">Search</button>
+    </form>
+
+    <p id="apiPrompt">Fetching photos from Curiosity rover on Earth date: <strong>2020-07-01</strong></p>
+
     <div id="photos"></div>
 
     
