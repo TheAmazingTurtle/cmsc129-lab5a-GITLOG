@@ -15,20 +15,31 @@
     <h1>Mars Rover Photo Viewer</h1>
 
     <form class="apiRequest">
-        <label>Rover:</label>
-        <select id="roverInput" name="rover">
-            <option value="curiosity">Curiosity</option>
-            <option value="opportunity">Opportunity</option>
-            <option value="spirit">Spirit</option>
-        </select>
+        <div id="roverInput">
+            <label>Rover:</label>
+            <select name="rover" id="roverSelect">
+                <option value="" disabled selected hidden>Select Rover</option>
+                <option value="curiosity">Curiosity</option>
+                <option value="opportunity">Opportunity</option>
+                <option value="spirit">Spirit</option>
+            </select>
+        </div>
 
-        <label>Date:</label>
-        <input class="expand" type="date" id="dateInput" name="date">
+        <div id="dateInput">
+            <label>Date:</label>
+            <input class="expand" type="number" id="monthInput" name="month" placeholder="MM">
+            <label>/</label>
+            <input class="expand" type="number" id="dayInput" name="day" placeholder="DD">
+            <label>/</label>
+            <input class="expand" type="number" id="yearInput" name="year" placeholder="YYYY">
+        </div>
 
         <button type="submit" id="submitApiRequest">Search</button>
-    </form>
 
-    <p id="apiPrompt">Fetching photos from Curiosity rover on Earth date: <strong>2020-07-01</strong></p>
+        <p id="roverInfo"></p> 
+    </form>
+    
+    <p id="apiPrompt"></p>
 
     <div id="photos"></div>
 
